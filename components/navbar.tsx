@@ -26,7 +26,8 @@ import {
 	SearchIcon,
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
+
+// import { LogoNav } from @/components/icons";
 
 export const Navbar = () => {
 	// const searchInput = (
@@ -56,7 +57,7 @@ export const Navbar = () => {
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						{/* <Logo /> */}
-						<p className="font-bold text-inherit">Auth</p>
+						<p className="font-bold text-inherit">Auth<span className="text-green-400 ">PRO</span></p>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -91,13 +92,13 @@ export const Navbar = () => {
 					<ThemeSwitch />
 				</NavbarItem>
 				{/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
-				<NavbarItem className="hidden md:flex">
+				<NavbarItem className="hidden md:flex items-center">
 					<Button
-            isExternal
+						isExternal
 						as={Link}
 						className="text-sm font-normal text-default-600 bg-default-100"
 						href={siteConfig.links.sponsor}
-						startContent={<HeartFilledIcon className="text-danger" />}
+						startContent={<HeartFilledIcon className="text-success" />}
 						variant="flat"
 					>
 						Sponsor
