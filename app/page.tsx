@@ -5,7 +5,7 @@ import { Code } from "@nextui-org/code"
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon , DocumentIcon} from "@/components/icons";
+import { GithubIcon, DocumentIcon } from "@/components/icons";
 import { Button } from "@nextui-org/button";
 
 export default function Home() {
@@ -40,9 +40,12 @@ export default function Home() {
 				</Link>
 			</div>
 			<div className="flex gap-3 my-5">
-				<Button size='lg' radius='full' color="success" variant="shadow">
-					Try!
-				</Button>
+				<NextLink
+					href={"login"}>
+					<Button size='lg' radius='full' color="success" variant="shadow">
+						Try!
+					</Button>
+				</NextLink>
 			</div>
 
 			{/* <div className="mt-8">
