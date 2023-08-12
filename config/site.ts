@@ -8,22 +8,18 @@ export const siteConfig = {
 			label: "Home",
 			href: "/",
 		},
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
+		{
+			label: "Docs",
+			href: "/docs",
+		},
+		{
+			label: "Login",
+			href: "/login",
+		},
+		{
+			label: "About",
+			href: "/about",
+		}
 	],
 	navMenuItems: [
 		{
@@ -63,6 +59,6 @@ export const siteConfig = {
 		github: "https://github.com/Vaibhav91one/next-auth",
 		twitter: "https://twitter.com/VrsatileVaibhav",
 		docs: "https://nextui.org",
-    sponsor: "https://patreon.com/jrgarciadev"
+		sponsor: "https://patreon.com/jrgarciadev"
 	},
 };
